@@ -3,6 +3,7 @@ Merb::Router.prepare do
 
   # Requests for Antiques are handled by Merb
   match("/antiques").to(:controller => "antiques", :action => "index").name(:antiques)
+  match("/antiques/broken").to(:controller => "antiques", :action => "show")
 
   # Merb also handles its own home page, but because the Rails route
   # is a wildcard it requires _something_ to be present in the URI,

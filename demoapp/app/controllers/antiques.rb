@@ -4,4 +4,8 @@ class Antiques < Application
     render
   end
   
+  def show
+    raise "Generic error!"
+  end
+  
 end
