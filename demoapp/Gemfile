@@ -1,0 +1,16 @@
+# A sample Gemfile
+source "http://rubygems.org"
+
+# Possibly redundant, as both Merb and Rails depend on Rack
+gem "rack"
+
+# Standard Rails 3.0.10
+gem "rails", "~> 3.0.10"
+
+# Forked Merb 1.0.11 maintained by Typekit CTO Ryan Carver
+git "git://github.com/rcarver/merb.git", :branch => "compat-1-0-11" do
+  gem "merb-core"
+end
+
+# Standard Sinatra 1.2.6, for API endpoints
+gem "sinatra", "1.2.6", :require => "sinatra/base"
