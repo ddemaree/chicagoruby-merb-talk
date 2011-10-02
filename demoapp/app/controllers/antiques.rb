@@ -1,7 +1,7 @@
 class Antiques < Application
   
   def index
-    render "antiques/index"
+    render
   end
   
 end
