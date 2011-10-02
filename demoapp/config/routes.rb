@@ -12,6 +12,6 @@ Demoapp::Application.routes.draw do
   match "*wildcard" => @merb_application
 
   # The application home page is handled by Rails
-  # root :to => "home#index"
+  root :to => "home#index"
 
 end
